@@ -2,9 +2,12 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
   "privileged": true,
   "forwardPorts": [2121],
-  "runArgs": ["--cap-add=SYS_ADMIN --privileged"],
+  "runArgs": ["--cap-add=SYS_ADMIN"],
   "postCreateCommand": "",
   "postStartCommand": ""
 }
