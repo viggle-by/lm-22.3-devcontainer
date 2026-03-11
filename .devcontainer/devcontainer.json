@@ -1,0 +1,10 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "privileged": true,
+  "forwardPorts": [2121],
+  "runArgs": ["--cap-add=SYS_ADMIN --privileged"],
+  "postCreateCommand": "",
+  "postStartCommand": ""
+}
